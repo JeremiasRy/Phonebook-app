@@ -70,7 +70,7 @@ app.post('/api/contacts', (req, res, next) => {
     .catch(error => next(error))
 })
 
-app.patch('/api/contacts/:id', (req, res, next) => {
+app.put('/api/contacts/:id', (req, res, next) => {
     let body = req.body
     let upContact = {
         name: body.name,

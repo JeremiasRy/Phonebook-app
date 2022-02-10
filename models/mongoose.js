@@ -18,7 +18,7 @@ const contactSchema = new mongoose.Schema({
       required: true },
     number: {
       type: String,
-      minlength: 8,
+      match: /^\d{2}-|-\d{5}$/,
       required: true }
   })
   
